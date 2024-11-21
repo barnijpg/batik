@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: first;
+    line-height: 1.6;
+    color: #333;
+  
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem ;
+    background-color: #8B4513;
+    color: wheat;
+   
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+   
+}
+
+nav ul li {
+    margin-left: 1.5em;
+  
+}
+
+nav ul li a {
+    color: wheat;
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+  
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 4em 2em;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero .btn {
+    padding: 0.5em 1.5em;
+    background-color: white;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+.collection {
+    padding: 2rem;
+    text-align: center;
+    
+}
+
+.collection h2 {
+    margin-bottom: 1em;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+   
+}
+
+.item {
+    flex: 1 1 calc(25% - 20px); /* Menyesuaikan 4 item per baris */
+    box-sizing: border-box;
+    text-align: center;
+   color: #8B4513;
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+    
+}
+a {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: #8B4513; /* Warna teks tautan */
+}
+
+a:hover {
+    color: wheat; /* Warna teks saat di-hover */
+    text-decoration: underline; /* Opsional: tambahkan garis bawah saat di-hover */
+}
+
+
+.item img {
+    width: 100%;
+    border-radius: 5px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.about, .contact {
+    padding: 2em;
+    text-align: center;
+    color: #8B4513;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+}
+
+footer {
+    background-color: #8B4513;
+    color: wheat;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about, .contact {
+    padding: 2em;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+   color: #8B4513;
+}
+
+.about.scroll-active, .contact.scroll-active {
+    opacity: 1;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+#teks {
+    color: white;
+}
+
+
+
+
+.btn-login {
+    padding: 10px 20px;
+    background-color: #8B4513;
+    color: #8B4513;
+    border: none;
+    border-radius: 30px;
+    transition: 1s;
+    padding-bottom: 1%;
+    margin-bottom: 2rem; /* Tambahkan jarak bawah */
+    align-items: center;
+}
+
+.btn-login:hover {
+    background-color: #8B4513;
+    color: #8B4513;
+    transform: translateX(-5px);
+    padding-bottom: 1%;
+}
+
+.btn-login a {
+    list-style-type: none;
+    text-decoration: none;
+    color: wheat;
+    align-items: center;
+}
+
+
+.textnew{
+    color: #8B4513;
+    font-size: 20px;
+
+}
+
+@font-face{
+    font-family: first;
+    src:url(urlCormorantGaramond-Italic.ttf)
+}
+
+.teksold{
+    color: #8B4513;
+    font-size:20px;
+    
+}
+
+.gallery .item img {
+    transition: transform 2s ease, box-shadow 0.3s ease;
+
+}
+
+.gallery .item img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #8B4513; /* Cahaya kuning */
+}
+
+.h2{
+    color: wheat;
+}
+
+.produk{
+    font-size: 20px;
+
+}
+.lokasi{
+    font-size: 15px;
+}
+
+.teksbaru{
+    text-align: center;
+    color: #8B4513;
+    font-size: 10px;
+}
